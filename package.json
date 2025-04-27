@@ -1,0 +1,37 @@
+{
+  "name": "express-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx -r tsconfig-paths/register -r dotenv/config src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint 'src/**/*.{js,ts}'",
+    "lint:fix": "eslint 'src/**/*.{js,ts}' --fix",
+    "format": "prettier --write 'src/**/*.{js,ts,json,md}'"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.2",
+    "@typescript-eslint/eslint-plugin": "^8.31.0",
+    "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "install": "^0.13.0",
+    "npm": "^11.3.0",
+    "prettier": "^3.5.3",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}

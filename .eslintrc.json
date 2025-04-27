@@ -1,0 +1,20 @@
+{
+    "env": {
+      "node": true,
+      "es2022": true // this should be same as the target in tsconfig.json
+    },
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": ["@typescript-eslint", "prettier"],
+    "rules": {
+      "prettier/prettier": "error",
+      "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],// add _ to variable will disable this
+      "no-console": "warn",
+      "prefer-const":"warn",
+      "@typescript-eslint/no-floating-promises": "warn"
+    }
+}
